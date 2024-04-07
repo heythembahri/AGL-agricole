@@ -1,0 +1,37 @@
+@startuml
+Left to right direction
+actor "Joueur" as j
+usecase "Gérer les cultures" as UC1
+usecase "Gérer l'alimentation des animaux" as UC2
+usecase "Gérer la logistique" as UC3
+usecase "Gérer l'inventaire" as UC4
+usecase "Gérer les finances" as UC5
+j --> UC1
+j --> UC2
+j --> UC3
+j --> UC4
+j --> UC5
+usecase "Réculter les cultures" as UC11
+usecase "Planter des cultures" as UC12
+usecase "Entretenir les cultures" as UC13
+UC1 --> UC11
+UC1 --> UC12
+UC1 --> UC13
+usecase "Surveiller la santé des animaux" as UC21
+usecase "Elever des animaux" as UC22
+usecase "Collecter les produits alimentaires" as UC23
+UC2 --> UC21
+UC2 --> UC22
+UC2 --> UC23
+usecase "Acheter des fournitures et des équipements" as UC04
+usecase "Vendre des produits agricoles" as UC05
+UC3 --> UC04
+UC3 --> UC05
+UC4 --> UC04
+UC4 --> UC05
+UC5 ..> UC05 #line:blue : <<Include>>
+UC11 ..> UC12 #line:blue : <<Include>>
+UC13 ..> UC12 #line:blue : <<Include>>
+UC21 ..> UC22 #line:blue : <<Include>>
+UC23 ..> UC22 #line:blue : <<Include>>
+@enduml
