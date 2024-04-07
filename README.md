@@ -7,6 +7,7 @@
 ## 1. **Gestion des alimentations animaux :**
 
 **Précondition** : Avoir suffisamment d'espace pour les enclos ∧ disposer d'une source d'eau suffisante ∧ avoir des fonds pour l'achat d'animaux, de nourriture et de fournitures pour leur entretien.
+
   ***Postcondition :*** Avoir des animaux en bonne santé et bien nourris ∧ des enclos propres et entretenus ∧ une production d'animaux vendables pour générer des revenus.
   
 
