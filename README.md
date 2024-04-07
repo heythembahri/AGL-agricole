@@ -1,8 +1,6 @@
-*
+# *Planification du premier Sprint :
 
-# *Planification du premier Sprint :**
-
-## -Les pré-/post-conditions- :**
+## -Les pré-/post-conditions- :
 
 ## 1. **Gestion des alimentations animaux :**
 
@@ -21,7 +19,7 @@
 
 
 
-## **1. Gestion des alimentations animaux :
+## 1. Gestion des alimentations animaux :
 
 
 | Fonctionnalités | Test 1  | Test 2 | Test 3|Test4
