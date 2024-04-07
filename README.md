@@ -1,4 +1,4 @@
-# *Planification du premier Sprint :
+# Planification du premier Sprint :
 
 ## -Les pré-/post-conditions- :
 
