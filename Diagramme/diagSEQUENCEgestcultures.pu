@@ -1,0 +1,36 @@
+@startuml
+' Participants
+participant Joueur
+participant Marché
+participant Entrepôt
+participant Culture
+
+' Interactions
+Joueur -> Marché: acheter_culture
+activate Marché
+Marché --> Joueur: mise_à_jour_quantité
+deactivate Marché
+
+Joueur -> Entrepôt: ajouter_culture
+activate Entrepôt
+Entrepôt --> Joueur: confirmation_ajout
+deactivate Entrepôt
+
+Joueur -> Culture: demander_date_plantation_et_récolte
+activate Culture
+Système --> Joueur: renvoyer_date_plantation_et_récolte(d, p)
+deactivate Culture
+
+alt Date de récolte égale à la date système
+    Joueur -> Marché: récolter_culture
+    Marché -> Entrepôt: retirer_culture
+    Marché --> Joueur: confirmation_récolte
+else
+    Joueur -> Marché: décider_arroser_ou_fertiliser
+    Marché --> Joueur: confirmation_action
+end
+
+Joueur -> Marché: vendre_culture
+Marché -> Entrepôt: retirer_culture
+Marché --> Joueur: confirmation_vente
+@enduml
