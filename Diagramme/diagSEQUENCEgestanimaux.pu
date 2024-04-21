@@ -1,0 +1,52 @@
+@startuml
+
+actor Joueur
+participant "Marché" as Marche
+participant "Enclos" as Enclos
+participant "Animal" as System
+
+Joueur -> Marche: Acheter animal
+activate Marche
+Marche -> Marche: retirer_produit(animal, quantite)
+Marche --> Joueur: Mise à jour quantité animal
+deactivate Marche
+
+Joueur -> Enclos: Ajouter animal
+activate Enclos
+Enclos --> Joueur: Confirmation ajout animal
+deactivate Enclos
+
+Joueur -> System: Demande santé animal
+activate System
+System --> Joueur: Renvoie poids et âge
+deactivate System
+
+Joueur -> System: Prend décision
+activate System
+alt Age > 5 and Poids < 50
+    Joueur -> System: Soigner ou vendre animal
+    activate System
+    alt Joueur décide de vendre
+        System -> Marche: Ajouter produit
+        activate Marche
+        Marche --> System: Confirmation ajout
+        deactivate Marche
+        Joueur -> Enclos: Retirer animal
+        activate Enclos
+        Enclos --> Joueur: Confirmation retrait animal
+        deactivate Enclos
+    else Joueur décide de soigner
+        System --> Joueur: Confirmation soin
+    end
+else
+    Joueur -> System: Nourrir ou reproduire animal
+    activate System
+    alt Joueur décide de reproduire
+        System --> Joueur: Confirmation reproduction
+    else Joueur décide de nourrir
+        System --> Joueur: Confirmation nourrissage
+    end
+end
+deactivate System
+
+@enduml
