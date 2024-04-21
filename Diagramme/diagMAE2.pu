@@ -1,0 +1,7 @@
+@startuml
+[*] --> culture_ajoutée : ajouter_produit(Culture, quantite)
+culture_ajoutée --> [*]
+culture_ajoutée --> culture_retirée : retirer_produit(Culture, quantite)
+culture_ajoutée <-- culture_retirée : ajouter_produit(Culture, quantite)
+entrepot_non_plein --> culture_ajoutée : ajouter_produit(Animal, quantite)
+@enduml

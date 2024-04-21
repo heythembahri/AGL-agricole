@@ -1,0 +1,7 @@
+@startuml
+[*] --> animal_ajouté : ajouter_produi(Animal, quantite)
+animal_ajouté --> [*]
+animal_ajouté --> animal_retiré : retirer_produit(Animal, quantite)
+animal_ajouté <-- animal_retiré : ajouter_produit(Animal, quantite)
+Enclos_non_plein --> animal_ajouté : ajouter_produit(Animal, quantite)
+@enduml
