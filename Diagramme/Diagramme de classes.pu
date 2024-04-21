@@ -1,0 +1,102 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Enclos {
+   +id_enclos: int
+   +nom_enclos: str
+   +capacite: integer
+   +animaux: Animal
+   +ajouter_ produit(animal: Animal, quantite: integer): void
+   +retirer_produit(animal: Animal, quantite: integer): void
+}
+
+class Animal {
+   +id_animal: int 
+   +nom_animal: str 
+   +age: int 
+   +sexe: sexe
+   +poids: float
+   +prix_achat: float
+   +prix_vente: float
+   +nourir(): void
+   +soigner(): void
+   +vendre(): void
+   +reproduire(): Animal
+}
+
+class Culture {
+   +id_culture: int 
+   +nom_culture: str 
+   +surface: float 
+   +date plantation: datetime 
+   +date_recolte: datetime 
+   +prix_achat: float 
+   +prix_vente: float 
+   +arroser(): void 
+   +fertiliser(): void 
+   +vendre(): void 
+   +recolter(): void
+}
+
+class Entrepot {
+   +id_entrepot: int 
+   +nom_entrepot: str 
+   +capacite_max: float
+   +produits: Culture
+   +ajouter_produit(culture: Culture, quantite: float): void 
+   +retirer_produit(culture: Culture, quantite: float): void
+}
+
+class Joueur {
+   +id_joueur: int 
+   +nom_joueur: str 
+   +argent: float 
+   +enclos: Enclos 
+   +entrepots: entrepot 
+   +cultures: Culture
+   +acheter_produit(culture: Culture, quantite: float, prix: float): void
+   +vendre_produit(culture: Culture, quantite: float, prix: float): void 
+   +acheter_animal(animal: Animal, enclos: Enclos): void 
+   +vendre_animal(animal: Animal): void tajouter_culture(culture: Culture, surface: float): void 
+   +supprimer_culture(culture: Culture): void
+}
+
+class Marche {
+   +id_marche: int
+   +produits_disponibles: Champs +prix_vente: Champs 
+   +prix_achat: Champs
+   +ajouter_produit(champs: Champs, quantite: float, prix_achat: float, prix_vente: float): void
+   +retirer_produit(champs: Champs, quantite: float): void
+   +mise_a_jour_prix(): void
+}
+
+class Ferme {
+   +Nom: str
+   +ajouter_produit (culture: Culture, quantite: float): void 
+   +retirer_produit(culture: Culture, quantite: float): void 
+   +acheter_produit(culture: Culture, quantite: float, prix: float): void 
+   +vendre_produit(culture: Culture, quantite: float, prix: float): void 
+   +vendre_animal(animal: Animal): void 
+   +ajouter_culture(culture: Culture, surface: float): void 
+   +supprimer_culture(culture: Culture): void 
+   +acheter_animal(animal: Animal, enclos: Enclos): void 
+   +ajouter_produit(champs: Champs, quantite: float, prix_achat: float, prix_vente: float): void 
+   +retirer_produit(champs: Champs, quantite: float): void
+   +mise_a_jour_prix(): void
+   +ajouter_produit (animal: Animal, quantite: float): void 
+   +retirer_produit(animal: Animal, quantite: float): void
+}
+
+Abstract Champs {}
+
+Enclos "+1..1" *-- "+1..N" Animal : +contenir
+Enclos "+1..N" -- "+1..1" Joueur : +appartenir
+Entrepot "+1..N" -- "+1..1" Joueur : +appartenir
+Entrepot "+1..1" *-- "+1..N" Culture : +contenir
+Enclos "+*" --o Ferme
+Joueur "+*" --o Ferme
+Marche "+*" --o Ferme
+Entrepot "+*" --o Ferme
+Champs *-- Marche
+Champs <|-- Animal
+Champs <|-- Culture
+@enduml
