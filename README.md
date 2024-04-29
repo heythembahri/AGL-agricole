@@ -79,6 +79,20 @@ Entrepôt :
 -Lorsqu'une culture est ajoutée à l'entrepôt, l'état passe à "Culture ajoutée". -Si une culture est retirée de l'entrepôt, l'état revient à "Culture retirée". 
 -Si la capacité maximale de l'entrepôt est atteinte, l'état passe à "Entrepôt plein". 
 -Si une culture est supprimée de l'entrepôt et que sa capacité n'est plus atteinte, l'état passe à "Entrepôt non plein
+-----------------------------------------------------------------------
+# Conception détaillée et Préparation Tests unitaires
+
+ **1.   Invariant pour la classe Enclos :**
+ La capacité totale de l'enclos ne doit pas être dépassée par la capacité utilisée.
+ **Attributs :** 
+ - capacite_totale: int 
+ - capacite_utilisee: int
+ - - calculerTauxUtilisation() -> float : -calcul du taux d'utilisation en pourcentage.
+ - Si capacite_totale == 0 : taux_utilisation = 0 Sinon : taux_utilisation = (capacite_utilisee / capacite_totale) * 100 Retourner taux_utilisation
+ - setTauxUtilisation() : Met à jour le taux d'utilisation en appelant calculerTauxUtilisation() Exemple d'utilisation : enclos = nouvel Enclos() enclos.capacite_totale = 1000 enclos.capacite_utilisee = 500 enclos.setTauxUtilisation() // Met à jour le taux d'utilisation
+
+
+
 
 
 
