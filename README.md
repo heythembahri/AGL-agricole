@@ -124,7 +124,11 @@ Entrepôt :
 -----------------------------------------
 # Conception détaillée et Préparation Tests unitaires
 
- **1.   Invariant pour la classe Enclos :**
+ **1. Etape 1 : 2ème raffinement avec la préparation de la programmation en parcourant les éléments de modèles à traduire et à programmer :
+
+![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/Diag%20de%20classes%20raffin%C3%A9.png?raw=true)
+
+ **2.   Invariant pour la classe Enclos :**
  La capacité totale de l'enclos ne doit pas être dépassée par la capacité utilisée.
  **Attributs :** 
  - capacite_totale: int 
