@@ -41,6 +41,7 @@
 |Nombre de jeux de tests|2|2xn|1|1
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------
+-------------------------------------------------------------------------
 **Aspect Statique : 
 Diagramme de Classes :**
 |  Classe| Atrributs|Operations
@@ -51,7 +52,5 @@ Diagramme de Classes :**
 Entrepôt|id_entrepot : l'identifiant unique de l'entrepôt nom_entrepot : le nom de l'entrepôt. capacite_max : la capacité maximale de stockage de l'entrepôt. produits : un dictionnaire qui contient les produits stockés et leur quantité |ajouter_produit(culture: Culture, quantite: float): cette méthode permet d'ajouter un certain nombre de produits d'une culture donnée à l'entrepôt. retirer_produit(culture: Culture, quantite: float): cette méthode permet de retirer un certain nombre de produits d'une culture donnée de l'entrepôt.
 Enclos |id_enclos : l'identifiant unique de l'enclos dans la base de données. nom_enclos : le nom de l'enclos. surface : la surface de l'enclos. capacite_max : la capacité maximale d'animaux que peut contenir l'enclos. animaux : une liste d'animaux contenus dans l'enclos.|ajouter_animal(animal: Animal): cette méthode permet d'ajouter un animal dans l'enclos supprimer_animal(animal: Animal): cette méthode permet de supprimer un animal de l'enclos
 Marché | id_marche : l'identifiant unique du marché dans la base de données. produits_disponibles : un dictionnaire qui contient les produits disponibles sur le marché et leur quantité. prix_vente : un dictionnaire qui contient les prix de vente des produits sur le marché. prix_achat : un dictionnaire qui contient les prix d'achat des produits sur le marché.|ajouter_produit(culture: Culture, quantite: float, prix_achat: float, prix_vente: float): cette méthode permet d'ajouter un certain nombre de produits d'une culture donnée sur le marché avec leur prix d'achat et de vente. retirer_produit(culture: Culture, quantite: float): cette méthode permet de retirer un certain nombre de produits d'une culture donnée du marché. mise_a_jour_prix(): cette méthode permet de mettre à jour les prix de vente des produits sur le marché
-Champs :une classe abstraite , classe mère des classes « Animal » et « Culture »
-Ferme :la classe façade qui contient le nom de la ferme
-
-
+- Champs :une classe abstraite , classe mère des classes « Animal » et « Culture
+- Ferme :la classe façade qui contient le nom de la ferme
