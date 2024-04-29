@@ -17,6 +17,9 @@
 -Les joueurs seront chargés de gérer l'inventaire de leur ferme, comprenant les cultures, les produits animaux, les fournitures et les équipements. Ils devront maintenir un niveau d'inventaire adéquat pour répondre aux besoins de leur exploitation et du marché.
 -Les joueurs progresseront en accomplissant des objectifs, en remportant des récompenses et en améliorant constamment leur ferme au fil du temps. 
 -Les joueurs auront la possibilité d'acquérir des fournitures et des équipements pour leur exploitation agricole, tels que des semences, de la nourriture pour les animaux, des outils et des machines. Ils pourront également vendre leurs produits agricoles à d'autres joueurs.
+## Diagramme de cas d'utilisation :
+
+![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/usecase.png?raw=true)
 
 
 # Planification du premier Sprint :
