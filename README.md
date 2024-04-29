@@ -124,7 +124,7 @@ Entrepôt :
 -----------------------------------------
 # Conception détaillée et Préparation Tests unitaires
 
- **1. Etape 1 : 2ème raffinement avec la préparation de la programmation en parcourant les éléments de modèles à traduire et à programmer :
+ **1. Etape 1 : 2ème raffinement avec la préparation de la programmation en parcourant les éléments de modèles à traduire et à programmer :**
 
 ![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/Diag%20de%20classes%20raffin%C3%A9.png?raw=true)
 
