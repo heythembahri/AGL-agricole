@@ -66,7 +66,7 @@
 
 -------------------------------------------------------------------------
 ## **Aspect Statique : Diagramme de Classes :**
-![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/Diagramme%20de%20classes.png?raw=true)
+
 |  Classe| Atrributs|Operations
 |--|--|--|
 | Joueur |id_joueur : l'identifiant unique du joueur nom_joueur : le nom du joueur. argent : l'argent du joueur. enclos : une liste des enclos appartenant au joueur entrepots : une liste des entrepôts appartenant au joueur. cultures : une liste des cultures appartenant au joueur. | acheter_produit(culture: Culture, quantite: float, prix: float): cette méthode permet à un joueur d'acheter un certain nombre de produits d'une culture donnée à un certain prix. vendre_produit(culture: Culture, quantite: float, prix: float): cette méthode permet à un joueur de vendre un certain nombre de produits d'une culture donnée à un certain prix acheter_animal(animal: Animal, enclos: Enclos): cette méthode permet à un joueur d'acheter un animal et de le placer dans un enclos. vendre_animal(animal: Animal): cette méthode permet à un joueur de vendre un animal. ajouter_culture(culture: Culture, surface: float): cette méthode permet à un joueur d'ajouter une culture avec une certaine surface. supprimer_culture(culture: Culture): cette méthode permet à un joueur de supprimer une culture.
@@ -80,9 +80,8 @@ Marché | id_marche : l'identifiant unique du marché dans la base de données. 
 **
 
 ## Aspect Dynamique : Diagramme de Séquences :
-![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/Diagramme%20de%20sequences%20%28gestion%20animaux%29.png?raw=true)
-
 1. ## **Gérer les alimentations des animaux :**
+   ![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/Diagramme%20de%20sequences%20%28gestion%20animaux%29.png?raw=true)
 **Description textuelle :**
 -Le joueur commence par envoyer une demande pour acheter un animal au marché. Le marché reçoit cette demande et retire la quantité spécifiée de l'animal demandé. Ensuite, le marché envoie une mise à jour de la quantité d'animaux disponible au joueur. --Ensuite, le joueur souhaite ajouter l'animal acheté à son enclos. Il envoie une demande à l'enclos pour ajouter l'animal, et l'enclos envoie une confirmation d'ajout de l'animal au joueur. -Le joueur veut ensuite vérifier la santé de l'animal, donc il envoie une demande au système pour obtenir des informations sur le poids et l'âge de l'animal. Le système renvoie ces informations au joueur. -En fonction de l'âge et du poids de l'animal, deux scénarios sont possibles : -Si l'âge de l'animal est supérieur à 5 ans et son poids est inférieur à 50, le joueur doit prendre une décision entre soigner ou vendre l'animal. S'il décide de vendre, le système envoie une demande au marché pour ajouter l'animal à la vente, puis retire l'animal de l'enclos et envoie une confirmation au joueur. -Sinon, s'il décide de soigner, le système envoie une confirmation de soin au joueur. -Si l'âge de l'animal est inférieur ou égal à 5 ans ou son poids est supérieur ou égal à 50, le joueur doit décider entre nourrir ou reproduire l'animal. S'il décide de reproduire, le système envoie une confirmation de reproduction au joueur. -Sinon, s'il décide de nourrir, le système envoie une confirmation de nourrissage au joueur.
 
