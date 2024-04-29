@@ -100,24 +100,28 @@ Marché | id_marche : l'identifiant unique du marché dans la base de données. 
 
 ## Diagrammes de machine à états :
 
-Enclos :
 
-![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/diagramme%20de%20machine%20%C3%A0%20etats%201.png?raw=true)
+
 
 **Explication :**
 
 Enclos : 
+
+![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/diagramme%20de%20machine%20%C3%A0%20etats%201.png?raw=true)
  - L'état initial de l'enclos est "En attente". 
 - Lorsqu'un animal est ajouté à l'enclos, l'état passe à "Animal ajouté".
 - Si un animal est retiré de l'enclos, l'état revient à "Animal retiré".
 -  Si la capacité maximale de l'enclos est atteinte, l'état passe à "Enclos plein". 
 -  Si un animal est supprimé de l'enclos et que sa capacité n'est plus atteinte, l'état passe à "Enclos non-plein".
-Entrepôt :  ![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/diagramme%20machine%20%C3%A0%20etats%202.png?raw=true)
+
+Entrepôt :
+![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/diagramme%20machine%20%C3%A0%20etats%202.png?raw=true)
 -L'état initial de l'entrepôt est "En attente".  
 -Lorsqu'une culture est ajoutée à l'entrepôt, l'état passe à "Culture ajoutée". -Si une culture est retirée de l'entrepôt, l'état revient à "Culture retirée". 
 -Si la capacité maximale de l'entrepôt est atteinte, l'état passe à "Entrepôt plein". 
 -Si une culture est supprimée de l'entrepôt et que sa capacité n'est plus atteinte, l'état passe à "Entrepôt non plein
------------------------------------------------------------------------
+
+-----------------------------------------
 # Conception détaillée et Préparation Tests unitaires
 
  **1.   Invariant pour la classe Enclos :**
