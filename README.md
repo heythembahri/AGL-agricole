@@ -1,3 +1,24 @@
+# Introduction au projet :
+
+ Le projet AGL que nous allons entreprendre vise à élaborer une simulation d'exploitation agricole hautement personnalisable. Cette simulation permettra aux utilisateurs de diriger leur propre ferme, en ayant le choix parmi une vaste sélection d'animaux, de cultures, d'entrepôts et de garages pour les accompagner dans leur aventure. Elle tiendra également compte des variations du marché agricole., permettant ainsi des transactions d'achat et de vente, offrant ainsi une expérience de jeu authentique. En ce qui concerne le périmètre du projet, il englobera la conception de l'interface utilisateur, la création de modèles de données pour les différents types d'animaux et de cultures, l'implémentation d'un système de gestion des stocks et de l'inventaire, ainsi que la prise en charge de la logistique pour les transactions et les transports. Nous mettrons également en place un système de progression pour les joueurs, comprenant des objectifs et des défis à relever pour améliorer leur ferme. L'objectif ultime de ce projet est de développer une simulation agricole complète et immersive qui séduira les passionnés d'agriculture et de jeux de simulation en général. Choisir ce projet agricole pour notre travail en AGL est passionnant car il offre la possibilité d'améliorer l'agriculture tout en relevant un défi intéressant. Le caractère ludique du projet, avec des objectifs pour les joueurs, rend l'expérience engageante, et contribuer à quelque chose qui attire un large public est gratifiant. Spécification du projet : Les éléments fondamentaux de ce projet englobent l'exploitation agricole, l'élevage d'animaux, la culture de diverses plantes, la gestion des entrepôts et des garages, l'interaction avec les marchés, les transactions d'achat/vente, la jouabilité, la personnalisation du jeu, l'interface utilisateur et l'évolution des joueurs. 
+
+## Les contraintes :
+
+  1. **Des contraintes techniques** tels que la compatibilité, la sécurité, la qualité et la performance 
+  2.  La durée de réalisation du projet. 
+  3. La limitation aux ressources financières pour couvrir tous les besoins du projet.
+  4. Le respect des contraintes éthiques et légales (Par exemple : collecte et utilisation des données agricole dans la simulation). 
+ 
+
+## Les fonctionnalités :
+
+-Les joueurs auront la possibilité de cultiver une diversité de plantes, incluant des céréales, des légumes, des fruits, ainsi que des arbres, et seront responsables de leur entretien et de leur récolte. Ils devront également gérer l'approvisionnement en eau, la fertilisation et la lutte contre les ravageurs pour optimiser leur production.
+-Les joueurs auront l'opportunité d'élever une variété d'animaux tels que des vaches, des porcs, des poulets, et des moutons. Ils devront veiller à la nutrition, à la santé et au bien-être de leurs animaux pour augmenter leur productivité et leur qualité.
+-Les joueurs seront chargés de gérer l'inventaire de leur ferme, comprenant les cultures, les produits animaux, les fournitures et les équipements. Ils devront maintenir un niveau d'inventaire adéquat pour répondre aux besoins de leur exploitation et du marché.
+-Les joueurs progresseront en accomplissant des objectifs, en remportant des récompenses et en améliorant constamment leur ferme au fil du temps. 
+-Les joueurs auront la possibilité d'acquérir des fournitures et des équipements pour leur exploitation agricole, tels que des semences, de la nourriture pour les animaux, des outils et des machines. Ils pourront également vendre leurs produits agricoles à d'autres joueurs.
+
+
 # Planification du premier Sprint :
 
 ## -Les pré-/post-conditions- :
