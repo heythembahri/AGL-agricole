@@ -39,7 +39,7 @@
 |Avoir des fonds pour l'achat de semences et d'outils de jardinage.|||F|T
 |Bonne gestion des culture|F|F|F|T
 |Nombre de jeux de tests|2|2xn|1|1
--------------------------------------------------------------------------
+
 -------------------------------------------------------------------------
 ## **Aspect Statique : Diagramme de Classes :**
 |  Classe| Atrributs|Operations
@@ -87,9 +87,18 @@ Entrepôt :
  **Attributs :** 
  - capacite_totale: int 
  - capacite_utilisee: int
- - - calculerTauxUtilisation() -> float : -calcul du taux d'utilisation en pourcentage.
+ - calculerTauxUtilisation() -> float : -calcul du taux d'utilisation en pourcentage.
  - Si capacite_totale == 0 : taux_utilisation = 0 Sinon : taux_utilisation = (capacite_utilisee / capacite_totale) * 100 Retourner taux_utilisation
  - setTauxUtilisation() : Met à jour le taux d'utilisation en appelant calculerTauxUtilisation() Exemple d'utilisation : enclos = nouvel Enclos() enclos.capacite_totale = 1000 enclos.capacite_utilisee = 500 enclos.setTauxUtilisation() // Met à jour le taux d'utilisation
+
+| Conditions |  | T ou F
+|--|--|--|
+| Précondition | La capacité totale doit être non nulle (capacite_totale > 0) | T
+||La capacité utilisée doit être inférieure ou égale à la capacité totale (capacite_utilisee <= capacite_totale)|T
+|Post Condition|Le taux d'utilisation doit être calculé correctement (taux_utilisation calculé selon la formule donnée)| T
+|Exception| La précondition de capacité totale non nulle n'est pas satisfaite (capacite_totale = 0)|F
+
+
 
 
 
