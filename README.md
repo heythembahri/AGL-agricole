@@ -42,8 +42,7 @@
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------
-**Aspect Statique : 
-Diagramme de Classes :**
+## **Aspect Statique : Diagramme de Classes :**
 |  Classe| Atrributs|Operations
 |--|--|--|
 | Joueur |id_joueur : l'identifiant unique du joueur nom_joueur : le nom du joueur. argent : l'argent du joueur. enclos : une liste des enclos appartenant au joueur entrepots : une liste des entrepôts appartenant au joueur. cultures : une liste des cultures appartenant au joueur. | acheter_produit(culture: Culture, quantite: float, prix: float): cette méthode permet à un joueur d'acheter un certain nombre de produits d'une culture donnée à un certain prix. vendre_produit(culture: Culture, quantite: float, prix: float): cette méthode permet à un joueur de vendre un certain nombre de produits d'une culture donnée à un certain prix acheter_animal(animal: Animal, enclos: Enclos): cette méthode permet à un joueur d'acheter un animal et de le placer dans un enclos. vendre_animal(animal: Animal): cette méthode permet à un joueur de vendre un animal. ajouter_culture(culture: Culture, surface: float): cette méthode permet à un joueur d'ajouter une culture avec une certaine surface. supprimer_culture(culture: Culture): cette méthode permet à un joueur de supprimer une culture.
