@@ -99,6 +99,10 @@ Marché | id_marche : l'identifiant unique du marché dans la base de données. 
 # Conception Détaillée et Préparation des tests unitaires :
 
 ## Diagrammes de machine à états :
+
+Enclos :
+
+![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/diagramme%20de%20machine%20%C3%A0%20etats%201.png?raw=true)
 **Explication :**
 Enclos : 
  - L'état initial de l'enclos est "En attente". 
