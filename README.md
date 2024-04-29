@@ -19,7 +19,7 @@
 -Les joueurs auront la possibilité d'acquérir des fournitures et des équipements pour leur exploitation agricole, tels que des semences, de la nourriture pour les animaux, des outils et des machines. Ils pourront également vendre leurs produits agricoles à d'autres joueurs.
 ## Diagramme de cas d'utilisation :
 
-![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/usecase.png?raw=true)
+![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/usecase1.png?raw=true)
 
 
 # Planification du premier Sprint :
