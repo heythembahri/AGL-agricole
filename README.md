@@ -39,6 +39,6 @@
 |Avoir des fonds pour l'achat de semences et d'outils de jardinage.|||F|T
 |Bonne gestion des culture|F|F|F|T
 |Nombre de jeux de tests|2|2xn|1|1
-
+-------------------------------------------------------------------------
 
 
