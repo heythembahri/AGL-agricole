@@ -80,6 +80,7 @@ Marché | id_marche : l'identifiant unique du marché dans la base de données. 
 **
 
 ## Aspect Dynamique : Diagramme de Séquences :
+![enter image description here](https://github.com/heythembahri/AGL-agricole/blob/main/Diagramme/Diagramme%20de%20sequences%20%28gestion%20animaux%29.png?raw=true)
 
 1. ## **Gérer les alimentations des animaux :**
 **Description textuelle :**
